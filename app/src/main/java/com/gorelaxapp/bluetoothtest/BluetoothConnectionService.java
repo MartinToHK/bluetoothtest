@@ -269,6 +269,8 @@ public class BluetoothConnectionService {
     //connectedThread #write
     public  void write(byte[] out){
 
+        ConnectedThread r;
+
 
         //synchronize a copy of the connectedThread
         Log.d(TAG, "write: write Called.");
@@ -277,5 +279,7 @@ public class BluetoothConnectionService {
         mConnectedThread.write(out);
 
     }//end of write method
+
+    //this is testing
 
 }// end of main class
